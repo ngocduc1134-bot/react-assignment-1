@@ -1,6 +1,14 @@
 import './Profile.css';
-
+import React, {useState} from 'react';
 function Profile({name, age, gender, career, avatar}) {
+    // const like = document.getElementById("btn-like");
+    const [count, setCount] = useState(0);
+    const totalLike = () => {
+        setCount(count+1);
+    }
+    // like.addEventListener("click", () => {
+    //     setCount(count+1);  
+    // });
 
     return(
         <>
@@ -14,6 +22,8 @@ function Profile({name, age, gender, career, avatar}) {
             </header>
             <main>
                 <section className="profile-section">
+                    <button onClick={totalLike} className="btn-count-click" id="btn-like">Like</button>
+                    <span className="total-click">Số lượt like: {count}</span>
                     <div className="section-content">
                         <div className="profile-image-wrapper">
                             <img src={avatar} alt="Ảnh đại diện" className="profile-image" />

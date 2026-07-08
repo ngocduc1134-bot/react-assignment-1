@@ -36,6 +36,21 @@ header .contact-item .contact-link{
     background-color: var(--light-pink-color);
 }
 
+.btn-count-click {
+    padding: 3px 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius-s);
+    border: solid 2px transparent;
+    transition: all 0.3s;
+}
+
+.btn-count-click:hover {
+    background-color: transparent;
+    
+    border: solid 2px var(--secondary-color);
+}
+
 .profile-section .section-content {
     
     display: flex;
