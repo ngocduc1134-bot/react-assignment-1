@@ -1,0 +1,108 @@
+ul{
+    list-style-type: none;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+header .list-contact {
+    display: flex;
+    
+    gap: 40px;
+}
+
+header .contact-item .contact-link{
+    color: var(--dark-color);
+    font-size: var(--font-size-l);
+}
+
+.profile-section {
+    
+    width:100%;
+    padding: 80px 50px;
+    background-color: var(--light-pink-color);
+}
+
+.profile-section .section-content {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:30px;
+}
+
+.profile-section .profile-title::after {
+    display:block;
+    content:"";
+    background-color: var(--secondary-color);
+    width:50%;
+    height: 3px;
+    border-radius: var(--border-radius-s);
+}
+
+.profile-section .profile-details,
+.profile-section .profile-skills {
+    width: 25%;
+    min-width:250px;
+    padding: 8px 10px;
+    border: solid 1px var(--secondary-color);
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--dark-color);
+    border-radius: var(--border-radius-s);
+}
+
+
+
+.profile-section .list-detail, .profile-section .list-skill {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+ .profile-section .list-skill{
+    list-style-type: decimal;
+    margin-left: 20px;
+} 
+
+
+
+.profile-section .profile-image-wrapper {
+    width: 30%;
+    max-width: 300px;
+    min-width:200px;
+    
+}
+
+.profile-section .profile-image {
+    border-radius: var(--border-radius-circle);
+}
+
+@media screen and (max-width: 900px) {
+    .profile-section .section-content {
+        gap:80px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .profile-section .section-content {
+        gap:80px;
+        justify-content: center;
+    }
+}
+

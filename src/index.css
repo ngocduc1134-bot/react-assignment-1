@@ -1,0 +1,55 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+img {
+   width: 100%;
+}
+
+:root{
+  /* Color */
+  --white-color: rgb(255,255,255);
+  --dark-color: rgb(26, 11, 11);
+  --light-pink-color: rgb(245, 238, 242);
+  --media-gray-color: rgb(184, 178, 178);
+  --primary-color: rgb(105, 130, 239);
+  --secondary-color: rgb(225, 236, 108);
+
+  /* Font-size */
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.15rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+  /* Font-weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border-radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+
+
+}
+
+body {
+  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
